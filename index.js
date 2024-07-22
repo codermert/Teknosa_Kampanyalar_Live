@@ -24,7 +24,6 @@ axios.get(url)
       });
     });
 
-    // Save the data to a JSON file
     fs.writeFile('veri.json', JSON.stringify(campaigns, null, 2), (err) => {
       if (err) {
         console.error('Hata:', err);
